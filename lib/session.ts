@@ -4,7 +4,7 @@ import { randomUUID } from "crypto";
 
 import { cookies } from "next/headers";
 
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import {
   ADMIN_EMAIL,
   normalizeEmail,
@@ -28,6 +28,7 @@ function sessionCookieOptions() {
 }
 
 export async function ensureAdminUser() {
+  const sql = getSql();
   const [user] = await sql<WorkspaceUser[]>`
     insert into "User" ("id", "name", "email", "createdAt", "updatedAt")
     values (${randomUUID()}, ${"Admin"}, ${ADMIN_EMAIL}, now(), now())
@@ -42,6 +43,7 @@ export async function ensureAdminUser() {
 
 export async function findUserByEmail(email: string) {
   const normalizedEmail = normalizeEmail(email);
+  const sql = getSql();
 
   const [user] = await sql<WorkspaceUser[]>`
     select id, name, email

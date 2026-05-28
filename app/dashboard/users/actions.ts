@@ -3,7 +3,7 @@
 import { randomUUID } from "crypto";
 import { revalidatePath } from "next/cache";
 
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import type { UserFormState } from "./state";
 
 function readField(formData: FormData, key: string) {
@@ -46,6 +46,7 @@ export async function createUser(
   }
 
   try {
+    const sql = getSql();
     const [user] = await sql<{ email: string }[]>`
       insert into "User" ("id", "name", "email", "createdAt", "updatedAt")
       values (${randomUUID()}, ${name || null}, ${email}, now(), now())
@@ -85,6 +86,7 @@ export async function updateUser(
   }
 
   try {
+    const sql = getSql();
     const [user] = await sql<{ email: string }[]>`
       update "User"
       set
@@ -122,6 +124,7 @@ export async function deleteUser(
   }
 
   try {
+    const sql = getSql();
     const [user] = await sql<{ email: string }[]>`
       delete from "User"
       where id = ${id}

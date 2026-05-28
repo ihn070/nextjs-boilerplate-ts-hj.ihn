@@ -1,9 +1,10 @@
 export const dynamic = "force-dynamic";
 
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import { UserCrudBoard } from "@/components/user-crud-board";
 
 export default async function UsersPage() {
+  const sql = getSql();
   const users = await sql<
     {
       id: string;

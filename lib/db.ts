@@ -6,14 +6,18 @@ const globalForSql = globalThis as unknown as {
   sql?: ReturnType<typeof postgres>;
 };
 
-export const sql =
-  globalForSql.sql ??
-  postgres(process.env.DATABASE_URL!, {
+export function getSql() {
+  const databaseUrl = process.env.DATABASE_URL;
+
+  if (!databaseUrl) {
+    throw new Error("DATABASE_URL is required.");
+  }
+
+  globalForSql.sql ??= postgres(databaseUrl, {
     max: 1,
     prepare: false,
     ssl: "require",
   });
 
-if (process.env.NODE_ENV !== "production") {
-  globalForSql.sql = sql;
+  return globalForSql.sql;
 }
