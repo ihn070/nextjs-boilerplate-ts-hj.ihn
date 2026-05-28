@@ -1,0 +1,96 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "N HJ IHN Workspace Naver-style portal workspace" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: "N"
+          - generic [ref=e7]:
+            - paragraph [ref=e8]: HJ IHN Workspace
+            - paragraph [ref=e9]: Naver-style portal workspace
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]: "N"
+            - textbox "Search" [ref=e13]:
+              - /placeholder: Search workspace pages, users, or analytics
+          - button "Search" [ref=e14]
+      - navigation [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "Dashboard" [ref=e17] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Users" [ref=e18] [cursor=pointer]:
+          - /url: /dashboard/users
+        - link "Analytics" [ref=e19] [cursor=pointer]:
+          - /url: /dashboard/analytics
+  - generic [ref=e21]:
+    - complementary [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: Workspace
+        - heading "HJ IHN" [level=1] [ref=e26]
+        - paragraph [ref=e27]: hj.ihn@samsung.com
+      - navigation [ref=e28]:
+        - link "Home" [ref=e29] [cursor=pointer]:
+          - /url: /
+          - img [ref=e30]
+          - generic [ref=e33]: Home
+        - link "Dashboard" [ref=e34] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e35]
+          - generic [ref=e40]: Dashboard
+        - link "Users" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard/users
+          - img [ref=e42]
+          - generic [ref=e46]: Users
+        - link "Analytics" [ref=e47] [cursor=pointer]:
+          - /url: /dashboard/analytics
+          - img [ref=e48]
+          - generic [ref=e50]: Analytics
+        - link "Schedule" [ref=e51] [cursor=pointer]:
+          - /url: /dashboard/schedule
+          - img [ref=e52]
+          - generic [ref=e54]: Schedule
+        - link "Profile" [ref=e55] [cursor=pointer]:
+          - /url: /dashboard/profile
+          - img [ref=e56]
+          - generic [ref=e60]: Profile
+        - link "Settings" [ref=e61] [cursor=pointer]:
+          - /url: /dashboard/settings
+          - img [ref=e62]
+          - generic [ref=e65]: Settings
+      - generic [ref=e66]:
+        - paragraph [ref=e67]: Session
+        - paragraph [ref=e68]: Active demo login
+        - paragraph [ref=e69]: Signed in as hj.ihn@samsung.com
+    - main [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - paragraph [ref=e75]: Users CRUD
+          - heading "Live database tester" [level=1] [ref=e76]
+          - paragraph [ref=e77]: This page talks to Neon through Prisma. Use it to create demo users, edit email addresses, and delete rows while watching the database update immediately.
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - paragraph [ref=e80]: Total users
+              - paragraph [ref=e81]: "0"
+            - generic [ref=e82]:
+              - paragraph [ref=e83]: Latest
+              - paragraph [ref=e84]: No records yet
+            - generic [ref=e85]:
+              - paragraph [ref=e86]: Note
+              - paragraph [ref=e87]: Changes revalidate this page and the dashboard.
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: Database test bench
+            - generic [ref=e92]: Create, edit, and delete Users
+          - generic [ref=e93]:
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - generic [ref=e97]: Name
+                - textbox "Name" [ref=e98]:
+                  - /placeholder: HJ IHN
+              - generic [ref=e99]:
+                - generic [ref=e100]: Email
+                - textbox "Email" [ref=e101]:
+                  - /placeholder: demo@example.com
+              - button "Create user" [ref=e103]
+            - generic [ref=e105]: No users yet. Create one above to start testing CRUD.

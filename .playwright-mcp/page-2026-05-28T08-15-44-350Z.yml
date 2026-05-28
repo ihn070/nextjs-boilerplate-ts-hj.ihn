@@ -1,0 +1,31 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Email Login
+      - heading "Sign in with your email" [level=1] [ref=e6]
+      - paragraph [ref=e7]: This workspace checks whether your email exists in the User table. No password, no OAuth, just a fast database lookup.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - paragraph [ref=e10]: Admin account
+          - paragraph [ref=e11]: admin@samung.com
+          - paragraph [ref=e12]: If the account does not exist yet, it will be seeded into the User table the first time you sign in.
+        - generic [ref=e13]:
+          - paragraph [ref=e14]: What you get
+          - list [ref=e15]:
+            - listitem [ref=e16]: • Email-only sign in backed by the database
+            - listitem [ref=e17]: • Dashboard routes are protected after login
+            - listitem [ref=e18]: • Sign out clears the session cookie immediately
+      - link "Back to home" [ref=e20] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e21]:
+      - paragraph [ref=e22]: Access Form
+      - heading "Enter an email to continue" [level=2] [ref=e23]
+      - paragraph [ref=e24]: Use any email that already exists in the database. The default demo account is ready for quick testing.
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Email
+          - textbox "Email" [ref=e29]:
+            - /placeholder: admin@samung.com
+        - generic [ref=e30]:
+          - button "Continue with email" [ref=e31]
+          - paragraph [ref=e32]: Only emails that exist in the User table can sign in.

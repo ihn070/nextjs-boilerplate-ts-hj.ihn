@@ -1,0 +1,4 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]
+    - generic [ref=e21]

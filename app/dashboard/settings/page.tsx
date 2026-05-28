@@ -14,7 +14,7 @@ const settings = [
   {
     label: "Workspace mode",
     value: "Signed-in demo",
-    note: "No Google OAuth flow on this branch of the app.",
+    note: "Email-only login is used on this branch of the app.",
   },
 ];
 
@@ -22,8 +22,8 @@ export default function SettingsPage() {
   return (
     <main className="px-6 py-8 sm:px-8 lg:px-10">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-8">
-        <section className="rounded-[2rem] border border-zinc-200/80 bg-white/85 p-8 shadow-[0_24px_80px_-40px_rgba(0,0,0,0.3)] backdrop-blur dark:border-white/10 dark:bg-white/5">
-          <p className="text-sm font-medium uppercase tracking-[0.24em] text-zinc-500 dark:text-zinc-400">
+        <section className="rounded-[2rem] border border-emerald-100 bg-white p-8 shadow-[0_24px_80px_-40px_rgba(16,185,129,0.3)] dark:border-white/10 dark:bg-white/5">
+          <p className="text-sm font-medium uppercase tracking-[0.24em] text-emerald-600 dark:text-emerald-300">
             Settings
           </p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight">
@@ -39,9 +39,9 @@ export default function SettingsPage() {
           {settings.map((item) => (
             <article
               key={item.label}
-              className="rounded-[1.75rem] border border-zinc-200/80 bg-white/85 p-7 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.25)] backdrop-blur dark:border-white/10 dark:bg-white/5"
+              className="rounded-[1.75rem] border border-emerald-100 bg-white p-7 shadow-[0_20px_60px_-40px_rgba(16,185,129,0.28)] dark:border-white/10 dark:bg-white/5"
             >
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-emerald-600 dark:text-emerald-300">
                 {item.label}
               </p>
               <p className="mt-3 text-2xl font-semibold tracking-tight">
@@ -54,10 +54,10 @@ export default function SettingsPage() {
           ))}
         </section>
 
-        <section className="rounded-[2rem] border border-zinc-200/80 bg-white/85 p-8 shadow-[0_24px_80px_-40px_rgba(0,0,0,0.3)] backdrop-blur dark:border-white/10 dark:bg-white/5">
+        <section className="rounded-[2rem] border border-emerald-100 bg-white p-8 shadow-[0_24px_80px_-40px_rgba(16,185,129,0.3)] dark:border-white/10 dark:bg-white/5">
           <Link
             href="/dashboard"
-            className="inline-flex rounded-full bg-zinc-950 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-emerald-600 dark:bg-emerald-400 dark:text-zinc-950 dark:hover:bg-emerald-300"
           >
             Back to dashboard
           </Link>

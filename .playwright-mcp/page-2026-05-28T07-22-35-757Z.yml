@@ -1,0 +1,86 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: Workspace
+        - heading "HJ IHN" [level=1] [ref=e8]
+        - paragraph [ref=e9]: hj.ihn@samsung.com
+      - navigation [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+          - generic [ref=e15]: Home
+        - link "Dashboard" [ref=e16] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e17]
+          - generic [ref=e22]: Dashboard
+        - link "Analytics" [ref=e23] [cursor=pointer]:
+          - /url: /dashboard/analytics
+          - img [ref=e24]
+          - generic [ref=e26]: Analytics
+        - link "Schedule" [ref=e27] [cursor=pointer]:
+          - /url: /dashboard/schedule
+          - img [ref=e28]
+          - generic [ref=e30]: Schedule
+        - link "Profile" [ref=e31] [cursor=pointer]:
+          - /url: /dashboard/profile
+          - img [ref=e32]
+          - generic [ref=e36]: Profile
+        - link "Settings" [ref=e37] [cursor=pointer]:
+          - /url: /dashboard/settings
+          - img [ref=e38]
+          - generic [ref=e41]: Settings
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: Session
+        - paragraph [ref=e44]: Active demo login
+        - paragraph [ref=e45]: Signed in as hj.ihn@samsung.com
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Home
+        - heading "HJ IHN workspace" [level=1] [ref=e50]
+        - paragraph [ref=e51]: The main page now opens with the sidebar and the dashboard content already on screen, so you can start navigating immediately without going through a separate intro page.
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - paragraph [ref=e55]: Dashboard
+            - heading "Welcome, HJ IHN" [level=2] [ref=e56]
+            - paragraph [ref=e57]: This is the dashboard home. Use the sidebar to jump into each sample page and keep building without the Google sign-in flow.
+          - generic [ref=e58]: "Active session: hj.ihn@samsung.com"
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - paragraph [ref=e61]: Open tasks
+            - paragraph [ref=e62]: "12"
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: Team members
+            - paragraph [ref=e65]: "4"
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: Deploy status
+            - paragraph [ref=e68]: Healthy
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: Last sync
+            - paragraph [ref=e71]: Just now
+      - generic [ref=e72]:
+        - link "Section Analytics Sample charts, usage signals, and KPI cards. Open page -" [ref=e73] [cursor=pointer]:
+          - /url: /dashboard/analytics
+          - paragraph [ref=e74]: Section
+          - heading "Analytics" [level=3] [ref=e75]
+          - paragraph [ref=e76]: Sample charts, usage signals, and KPI cards.
+          - paragraph [ref=e77]: Open page -
+        - link "Section Schedule A simple weekly planner and upcoming tasks view. Open page -" [ref=e78] [cursor=pointer]:
+          - /url: /dashboard/schedule
+          - paragraph [ref=e79]: Section
+          - heading "Schedule" [level=3] [ref=e80]
+          - paragraph [ref=e81]: A simple weekly planner and upcoming tasks view.
+          - paragraph [ref=e82]: Open page -
+        - link "Section Profile A fixed account profile for hj.ihn@samsung.com. Open page -" [ref=e83] [cursor=pointer]:
+          - /url: /dashboard/profile
+          - paragraph [ref=e84]: Section
+          - heading "Profile" [level=3] [ref=e85]
+          - paragraph [ref=e86]: A fixed account profile for hj.ihn@samsung.com.
+          - paragraph [ref=e87]: Open page -
+        - link "Section Settings Preferences, workspace options, and app controls. Open page -" [ref=e88] [cursor=pointer]:
+          - /url: /dashboard/settings
+          - paragraph [ref=e89]: Section
+          - heading "Settings" [level=3] [ref=e90]
+          - paragraph [ref=e91]: Preferences, workspace options, and app controls.
+          - paragraph [ref=e92]: Open page -
