@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Boilerplate",
-  description: "Next.js 16 · Tailwind CSS v4 · shadcn/ui · Auth.js · Prisma · Neon",
+  title: "HJ IHN Workspace",
+  description: "Signed-in workspace demo for hj.ihn@samsung.com",
 };
 
 export default function RootLayout({
